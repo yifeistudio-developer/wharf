@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// protoc --go_out=./golang --go_opt=paths=source_relative --go-grpc_out=./golang --go-grpc_opt=paths=source_relative ./payment/payment.proto
+option go_package = "github.com/yifeistudio-developer/wharf/golang/payment";
+
+message CreatePaymentRequest {
+  int64 order_id = 1;
+}
+
+message CreatePaymentResponse {
+  int64 bill_id = 1;
+}
+
+service Payment {
+
+  rpc Create(CreatePaymentRequest) returns (CreatePaymentResponse) {}
+
+}
