@@ -1,3 +1,3 @@
-module github.com/yifeistudio-developer/wharf/payment
+module github.com/yifeistudio-developer/wharf/golang/payment
 
 go 1.23.0
