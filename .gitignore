@@ -3,5 +3,8 @@ go.sum
 # Ignore Gradle project-specific cache directory
 .gradle
 
+node_modules
+yarn.lock
+
 # Ignore Gradle build output directory
 build
