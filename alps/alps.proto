@@ -29,21 +29,12 @@ message CredentialRequest {
 // 账户概要信息
 message PrincipalsReply  {
 
-  int32 code = 1;
+  // 账号
+  string username = 1;
 
-  string msg = 2;
+  // 昵称
+  string nickname = 2;
 
-  Principals principals = 3;
-
-  message Principals {
-
-    // 账号
-    string username = 1;
-
-    // 昵称
-    string nickname = 2;
-
-    // 头像
-    string avatar = 3;
-  }
+  // 头像
+  string avatar = 3;
 }
